@@ -4,7 +4,14 @@
   "extends": [
     "config:recommended",
     ":semanticCommits",
-    "schedule:weekly",
     "helpers:pinGitHubActionDigests"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "pinDigests": true
+    }
   ]
 }
