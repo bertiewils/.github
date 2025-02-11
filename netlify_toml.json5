@@ -1,0 +1,12 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update _VERSION variables in netlify.toml",
+      "fileMatch": ["netlify.toml"],
+      "matchStrings": [
+        '# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\s .+?_VERSION = "(?<currentValue>.+?)"\\s'
+      ]
+    }
+  ]
+}
