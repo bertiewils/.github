@@ -5,7 +5,7 @@
     "config:recommended",
     ":semanticCommits",
     "helpers:pinGitHubActionDigests",
-    "netlify_toml.json5"
+    "github>bertiewils/.github:netlify_toml.json5"
   ],
   "packageRules": [
     {
